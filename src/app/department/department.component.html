@@ -2,7 +2,7 @@
   <mat-toolbar class="toolbar">
     <mat-card-title>Add New Information</mat-card-title>
     <span class="toolbar-spacer"></span>
-    <mat-icon (click)="onNoClick()">cancel</mat-icon>
+    <mat-icon (click)="onNoClick()" class="cancel">cancel</mat-icon>
   </mat-toolbar>
 </mat-card-header>
 <mat-card-content>
@@ -26,7 +26,7 @@
           <div class="col-md-6">
             <label>Service Type</label>
             <input type="text" formControlName="ServiceType" class="form-control" [matAutocomplete]="auto2">
-            <mat-autocomplete #auto2="matAutocomplete" name="AirportType">
+            <mat-autocomplete #auto2="matAutocomplete">
               <mat-option *ngFor="let service of filteredOptions2 | async" [value]="service">{{ service }}</mat-option>
             </mat-autocomplete>
           </div>

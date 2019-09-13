@@ -6,7 +6,7 @@ import { DepartmentComponent } from '../department/department.component';
 @Component({
   selector: 'app-department-list',
   templateUrl: './department-list.component.html',
-  styleUrls: ['./department-list.component.css']
+  styleUrls: ['./department-list.component.scss']
 })
 export class DepartmentListComponent implements OnInit {
 
@@ -34,9 +34,9 @@ export class DepartmentListComponent implements OnInit {
     });
   }
 
-  editDepartment(id: number) {
+  editDepartment(_id: number) {
     this.isPopupOpened = true;
-    const department = this._departmentService.getAllDepartments().find(c => c.ID === id);
+    const department = this._departmentService.getAllDepartments().find(c => c.ID=== _id);
     const dialogRef = this.dialog.open(DepartmentComponent, {
       data: department
     });

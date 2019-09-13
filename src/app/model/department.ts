@@ -1,7 +1,7 @@
 export class Department {
     ID: number;
-    AirportType: string;
-    DepartmentName: string;
-    ServiceType: string;
-    Skill: string;
+    airportType: string;
+    departmentName: string;
+    serviceType: string;
+    skill: string;
 }

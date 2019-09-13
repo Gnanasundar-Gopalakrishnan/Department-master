@@ -10,7 +10,7 @@ import {map, startWith} from 'rxjs/operators';
 @Component({
   selector: 'app-department',
   templateUrl: './department.component.html',
-  styleUrls: ['./department.component.css']
+  styleUrls: ['./department.component.scss']
 })
 export class DepartmentComponent implements OnInit {
 
@@ -72,5 +72,15 @@ export class DepartmentComponent implements OnInit {
       this.dialogRef.close();
     }
   }
+
+//  disabledCondition(){
+//    if(this._contactForm.value==="")
+//    {
+//    return true;
+//   }
+//   if(this._contactForm.value!=""){
+//     return false;
+//   }
+//  }
 
 }
